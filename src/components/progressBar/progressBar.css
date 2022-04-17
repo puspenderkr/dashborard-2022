@@ -1,0 +1,66 @@
+.progressBar {
+  flex: 1;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 10px;
+}
+.progressBar .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: gray;
+}
+.progressBar .top .title {
+  font-size: 16px;
+  font-weight: 500;
+}
+.progressBar .bottom {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.progressBar .bottom .progressBarChart {
+  width: 100px;
+  height: 100px;
+}
+.progressBar .bottom .title {
+  font-weight: 500;
+  color: gray;
+}
+.progressBar .bottom .amount {
+  font-size: 30px;
+}
+.progressBar .bottom .desc {
+  font-weight: 300;
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+}
+.progressBar .bottom .summary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.progressBar .bottom .summary .item {
+  text-align: center;
+}
+.progressBar .bottom .summary .item .itemTitle {
+  font-size: 14px;
+  color: gray;
+}
+.progressBar .bottom .summary .item .itemResult {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.progressBar .bottom .summary .item .itemResult.positive {
+  color: green;
+}
+.progressBar .bottom .summary .item .itemResult.negative {
+  color: red;
+}
